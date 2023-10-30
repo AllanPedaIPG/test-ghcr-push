@@ -1,4 +1,6 @@
 FROM alpine:latest
-# RUN apk add --no-cache mysql-client
+
+RUN apk upgrade
+RUN apk update
 
 ENTRYPOINT ['/bin/sh']
