@@ -14,3 +14,4 @@ https://docs.github.com/en/actions/security-guides/automatic-token-authenticatio
 
 # Step 4 (To Do)
 This should be able to push to ghcr.io
+https://dev.to/willvelida/pushing-container-images-to-github-container-registry-with-github-actions-1m6b
