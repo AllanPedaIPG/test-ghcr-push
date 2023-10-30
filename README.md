@@ -8,4 +8,7 @@ created Dockerfile based on Alpine
 tested Dockerfile locally with cli-action.sh which launches idle container
 
 # Step 3
-Creation of .ghitbub/main.yml workflow.  This should be able to push to ghcr.io
+Creation of .ghitbub/docker-image.yml workflow.  This was based on the suggested Action as prompted by Gihub.
+
+# Step 4 (To Do)
+This should be able to push to ghcr.io
