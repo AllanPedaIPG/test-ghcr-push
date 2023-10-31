@@ -32,5 +32,5 @@ jobs:
         password: ${{secrets.GITHUB_TOKEN}}
     - name: Build and push GHCR Image
       run: |
-        docker build . --tag ghcr.io/${{ GITHUB_REPOSITORY }}:${{ env.BUILD_DATE }}
-        docker push ghcr.io/${{ GITHUB_REPOSITORY }}:${{ env.BUILD_DATE }}
+        docker build . --tag ghcr.io/${{ github.repository }}:${{ env.BUILD_DATE }}
+        docker push ghcr.io/${{ github.repository }}:${{ env.BUILD_DATE }}
