@@ -20,6 +20,6 @@ jobs:
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
    - name: 'Build and push GHCR Image'
-           run: |
-             docker build . --tag ghcr.io/allanpedaipg/test-ghcr-push:latest
-             docker push ghcr.io/allanpedaipg/test-ghcr-push:latest
+     run: |
+        docker build . --tag ghcr.io/allanpedaipg/test-ghcr-push:latest
+        docker push ghcr.io/allanpedaipg/test-ghcr-push:latest
