@@ -21,7 +21,8 @@ jobs:
       shell: bash
       run: |
         echo "BUILD_DATE=$(date +%Y-%m-%dT%H%M%S)" >> $GITHUB_ENV
-        echo "GH_REPO=$(echo ${{ github.repository }}| tr [A-Z] [a-z])" >> $GITHUB_ENV
+        GH_REPO=${{ github.repository }}
+        echo "GH_REPO=${GH_REPO,,}" >> $GITHUB_ENV
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run:  docker build . --file Dockerfile --tag alpine-ghcr-push-test:${{ env.BUILD_DATE }}
