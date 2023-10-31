@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  BUILD_DATE: "2023-10-31T135348"
+  BUILD_DATE: "set during build"
 
 jobs:
   build:
