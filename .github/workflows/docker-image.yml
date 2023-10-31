@@ -19,7 +19,8 @@ jobs:
         registry: ghcr.io
         username: ${{github.actor}}
         password: ${{secrets.GITHUB_TOKEN}}
-#  - name: 'Build and push GHCR Image'
+    - name: Build and push GHCR Image
+      run: echo "test run entry"
 #    run: |
 #       docker build . --tag ghcr.io/allanpedaipg/test-ghcr-push:latest
 #       docker push ghcr.io/allanpedaipg/test-ghcr-push:latest
