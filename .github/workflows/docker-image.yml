@@ -23,7 +23,8 @@ jobs:
         echo "BUILD_DATE=$(date +%Y-%m-%dT%H%M%S)" >> $GITHUB_ENV
         GH_REPO=${{ github.repository }}
         echo "GH_REPO=${GH_REPO,,}" >> $GITHUB_ENV
-    - uses: actions/checkout@v3
+    - name: Checkout
+      uses: actions/checkout@v3
     - name: Build the Docker image
       run:  docker build . --file Dockerfile
     - name: Login to GitHub Container Registry
